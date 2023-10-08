@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+      body{
+        background-image:  url("https://images.unsplash.com/photo-1597421496967-de75b7be7048?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE4fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60") ;
+        background-size: cover;
+
+      }
+    </style>
+  </head>
+<body>
+    <div class="container-fluid mt-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="font-family: serif;">WATCHSHOP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  New In
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Watches</a></li>
+                  <li><a class="dropdown-item" href="#">Smart Watches </a></li>
+                  <li><a class="dropdown-item" href="#">Jewellery</a></li>
+                  <li><a class="dropdown-item" href="#">Brands</a></li>
+                  <li><a class="dropdown-item" href="#">Sale</a></li>
+                </ul>
+              </li>
+            </ul>
+            </div>
+            <form class="d-flex" >
+                <input class="form-control me-1 " type="search" placeholder="Search" aria-label="Search" >
+                <button class="btn btn-secondary" type="submit">Search</button>
+            </form>
+            <button type="button" class="btn btn-dark position-relative ">
+                My Cart
+                <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-secondary">
+                  21
+                  <span class="visually-hidden">stored items</span>
+                </span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="row g-0">
+            <div class="col-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 style="text-align: center;">REFINE SELECTION</h5>
+                        <button class="btn btn-outline-dark mb-1 " style="margin: auto;display: block;">Clear All Filters</button>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  Brands
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          ABBOTT LYON
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          ACURIST
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          ADIDAS
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          ALPINA
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          SHOW ALL BRANDS
+                                        </li>
+                                      </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Gender
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          FOR HIM
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          FOR HER
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          UNISEX
+                                        </li>
+                                      </ul>
+                              </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Subcategories 
+                                </button>
+                              </h2>
+                              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          MENS CLASSIC
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          MENS DESIGNER LABEL
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          MENS GADGET
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          MENS LUXURY
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          MENS NEW IN
+                                        </li>
+                                      </ul>
+                                    </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Price Range
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          80000-50000
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          49999-30000
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          29999-10000
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          9999-5000
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          less than 5000
+                                        </li>
+                                      </ul>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Colour
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          RED 
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          BLUE 
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          GRAY
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          BLACK
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          WHITE
+                                        </li>
+                                      </ul>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Strap Type
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          BROAD 
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          NARROW
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          METALLIC
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          LEATHER
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          THREADED
+                                        </li>
+                                      </ul>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Case Colour/Type
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          METAL
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          LEATHER
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          BOXED
+                                        </li>
+                                      </ul>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Analogue/Digital
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          ANALOGUE
+                                        </li>
+                                        <li class="list-group-item">
+                                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                                          DIGITAL
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                              </div>
+                          </div>
+
+                    </div>
+                </div>
+            </div>
+          
+            
+              <div class="col-md-10">
+                <div >
+                  <div class="card-body">
+                    <p class="h3" style="font-family: serif;">MENS WATCHES</p>
+                    <p style="font-family: serif;">Our extensive collection of mens's watches covers every style and taste, from cutting-edge modern designs to ageless classics. Our vast range of sports watches includes popular brands, such as Casio G Shock and Citizen, all packed with the special features any budding sportsman could need. If it's versatility you're after, our casual collection comes from fashion brands such as Diesel and Fossil and looks great in the office or out on the town.</p>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                      <div class="container-fluid">
+                        
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="navbar-nav">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#" style="font-weight: bold;">Most Popular</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#" style="font-weight: bold;">Lowest Price</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#" style="font-weight: bold;">Highest Price</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#" style="font-weight: bold;">Best Sellers</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#" style="font-weight: bold;">Newest</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>
+
+                    <div class="container">
+                      <div class="row mt-1">
+
+                        <div class="card-group">
+                          <div class="card ">
+                            <img style="img-fluid;width: 230px;margin: 25px auto;" src="https://d1rkccsb0jf1bk.cloudfront.net/products/99954592/main/large/mk_2_circuit_slate_green-1344527620-8767.jpg " class="card-img-top " alt="...">
+                            <div class="card-img-overlay">
+                              <img style="margin-left: 0px;width: 80px" src="https://www.becomea6figurewoman.com/site/wp-content/uploads/2015/09/bestseller-1024x1024.jpg" alt="">
+                            </div>
+                            <div class="card-body text-center">
+                              <h5 class="card-title" style="font-family: cursive;font-weight: bold">STORM</h5>
+                              <p class="card-text">MENS MK2 CIRCUIT WATCH</p>
+                            </div>
+                            <div class="card-footer text-center">
+                              <del class="text-muted">$150.92</del>
+                              <big style="color: red;">$147.95</big>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img style="img-fluid;width: 190px;margin: 23px auto;" src="https://cdn.creativewatch.co.uk/cached_images/0140976_fit_400_500_gc-mens-watch-76002g2s-large_0.jpg" class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                              <img style="margin-left: 0px;width: 90px" src="https://thumbs.dreamstime.com/b/vector-illustration-cool-new-arrival-sticker-tag-banner-megaphone-vector-illustration-new-arrival-sticker-tag-banner-169160809.jpg" alt="">
+                            </div>
+                            <div class="card-body text-center">
+                              <h5 class="card-title" style="font-family: cursive;font-weight: bold">GC</h5>
+                              <p class="card-text">MENS SPORT CLASS XXL BLACKOUT CERAMIC WATCH</p>
+                            </div>
+                            <div class="card-footer text-center">
+                              <big>$791.02</big>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img style="img-fluid;width: 230px;margin:25px auto;" src="https://d1rkccsb0jf1bk.cloudfront.net/products/100000754/main/large/14602098-1463147841-7926.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                              <h5 class="card-title" style="font-family: cursive;font-weight: bold">COACH</h5>
+                              <p class="card-text">MENS EXCLUSIVE METROPOLITAN WATCH</p>
+                            </div>
+                            <div class="card-footer text-center">
+                              <big>$256.09</big>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img style="img-fluid;width: 230px;margin:25px auto;" src="https://d1rkccsb0jf1bk.cloudfront.net/products/100004748/main/large/a197sw-2723-view1-1481046510-376.jpg" class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                              <img style="margin-left: 0px;width: 80px" src="https://www.becomea6figurewoman.com/site/wp-content/uploads/2015/09/bestseller-1024x1024.jpg" alt="">
+                            </div>
+                            <div class="card-body text-center">
+                              <h5 class="card-title" style="font-family: cursive;font-weight: bold">NIXON</h5>
+                              <p class="card-text">MENS STARWARS EXCLUSIVE DEATHTROOPER ROGUE WATCH</p>
+                            </div>
+                            <div class="card-footer text-center">
+                              <del class="text-muted">$170.72</del>
+                              <big style="color: red;">$124.06</big>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="container">
+                      <div class="row mt-2">
+
+                        <div class="card-group">
+                          <div class="card ">
+                            <img style="img-fluid;width: 230px;margin: 25px auto;" src="https://www.watchmonde.com/6315-large_default/hugo-boss-1513359-mens-supernova-chronograph-watch.jpg" class="card-img-top " alt="...">
+                            <div class="card-body text-center">
+                              <h5 class="card-title" style="font-family: cursive;font-weight: bold">HUGO BOSS</h5>
+                              <p class="card-text">MENS SUPERNOVA CHRONOGRAPH WATCH</p>
+                            </div>
+                            <div class="card-footer text-center">
+                              <big>$319.82</big>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img style="img-fluid;width: 230px;margin: 23px auto;" src="https://www.watchmonde.com/6260-thickbox_default/hugo-boss-1513194-mens-ambassador-exclusive-chronograph-watch.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                              <h5 class="card-title" style="font-family: cursive;font-weight: bold">HUGO BOSS</h5>
+                              <p class="card-text">MENS AMBASSADOR EXCLUSIVE CHRONOGRAPH WATCH</p>
+                            </div>
+                            <div class="card-footer text-center">
+                              <big>$398.35</big>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img style="img-fluid;width: 170px;margin:10px auto;" src="https://sslimages.shoppersstop.com/sys-master/images/hf3/h43/9139973554206/200556736_9999.png_2000Wx3000H" class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                              <img style="margin-left: 0px;width: 80px" src="http://b2blink.in/wp-content/uploads/2016/09/salesssss.jpg" alt="">
+                            </div>
+                            <div class="card-body text-center">
+                              <h5 class="card-title" style="font-family: cursive;font-weight: bold">GUESS</h5>
+                              <p class="card-text">UNISEX CONNECT EXCLUSIVE BLUETOOTH WEARS OS WATCH</p>
+                            </div>
+                            <div class="card-footer text-center">
+                              <del class="text-muted">$338.74</del>
+                              <big style="color: red;">$317.55</big>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <img style="img-fluid;width: 150px;margin:20px auto;" src="https://images-na.ssl-images-amazon.com/images/I/714X6NbgniL._AC_UX522_.jpg" class="card-img-top" alt="...">
+                            <div class="card-img-overlay">
+                              <img style="margin-left: 0px;width: 80px" src="http://b2blink.in/wp-content/uploads/2016/09/salesssss.jpg" alt="">
+                            </div>
+                            <div class="card-body text-center">
+                              <h5 class="card-title" style="font-family: cursive;font-weight: bold">ROTARY</h5>
+                              <p class="card-text">MENS EXCLUSIVE VINTAGE CHRONOGRAPH WATCH</p>
+                            </div>
+                            <div class="card-footer text-center">
+                              <del class="text-muted">$169.59</del>
+                              <big style="color: red;">$118.37</big>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+
+
+
+
+             
+             
+                      </div>
+                  </div>
+
+                  </div>
+                </div>
+              </div>
+            
+           
+
+
+        </div>
+      </div>
+    
+      
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
